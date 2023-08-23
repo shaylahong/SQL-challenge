@@ -8,14 +8,14 @@ create table departments (
 	dept_name varchar(30) not null
 );
 
-CREATE TABLE employees (
-    emp_no INT   NOT NULL,
-    emp_title_id VARCHAR NOT NULL,
-    birth_date varchar   NOT NULL,
-    first_name VARCHAR   NOT NULL,
-    last_name VARCHAR   NOT NULL,
-    sex VARCHAR   NOT NULL,
-    hire_date varchar   NOT NULL,
+create table employees (
+    emp_no int not null,
+    emp_title_id varchar not null,
+    birth_date varchar not null,
+    first_name varchar not null,
+    last_name varchar not null,
+    sex varchar not null,
+    hire_date varchar not null,
     FOREIGN KEY (emp_title_id) REFERENCES titles (title_id),
     PRIMARY KEY (emp_no)
 );
